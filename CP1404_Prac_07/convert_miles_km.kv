@@ -1,0 +1,37 @@
+BoxLayout:
+
+    BoxLayout:
+
+        orientation: 'vertical'
+
+        BoxLayout:
+
+            TextInput:
+                id: input_number
+                text: ''
+
+            BoxLayout:
+
+                orientation: 'vertical'
+
+                Button:
+                    text: 'Up'
+                    on_press: app.handle_increment()
+
+                Button:
+                    text: 'Down'
+                    on_press: app.handle_decrement()
+
+        BoxLayout:
+
+            orientation: 'vertical'
+
+            Button:
+                text: "Convert m to km"
+                on_press: app.calculate()
+
+            Label:
+                id: output_label
+                text: app.message
+                font_size: 42
+                color: (2,1,0,1)

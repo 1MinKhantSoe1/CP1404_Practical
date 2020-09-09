@@ -1,0 +1,28 @@
+BoxLayout:
+
+
+    BoxLayout:
+
+        orientation: 'vertical'
+
+        BoxLayout:
+
+            TextInput:
+                id: input_number
+                text: ''
+
+            Button:
+                text: 'Square'
+                on_press: app.calculate()
+
+            Label:
+                id: output_label
+                text: ''
+                color: (255/255.0,192/255.0,203/255.0,1)
+
+
+
+        BoxLayout:
+
+            Label:
+                text: 'Enter a number and press "Square"'
